@@ -200,3 +200,254 @@ body{
     font-weight: 400;
     line-height: 1.5;
 }
+
+/*Featured Episodes section styles */
+.featured-episodes{
+    margin-top: 120px;
+}
+.featured-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.video-container{
+    justify-content: center;
+    gap:30px;
+}   
+.video-card{
+    max-width: 350px;
+    gap: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #250D44;
+}
+.video-info{
+    padding: 12px 24px;
+}
+.class-duration{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Host section styles */
+.host-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.host-intro{
+    margin: 30px 200px;
+    background-color: #230E3D;
+    border-radius: 40px;
+}
+.host-image{
+    margin: 35px;
+}
+#host-name{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.host-description{
+    margin: 0px 10px;
+    flex-direction: column;
+}
+.social-links{
+    gap: 14px;
+}
+.link{
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.link img{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+/* Footer related styles */
+.footer{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 412px;
+    background-position: center;
+}
+.footer-heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-top: 120px;
+    margin-bottom: 10px;
+}
+#footer-wave{
+    font-weight: 700;
+    color: rgba(251, 9, 180, 1);
+}
+.footer-links{
+    justify-content: center;
+    gap: 40px;
+    margin-top: 0px;
+}
+.footer-social-links{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*classes to avoid repetition of inline code*/
+.text-white{
+    color: #FFFFFF;
+}
+.text-light-white{
+    color:rgba(255,255,255,0.6);
+}
+.text-medium-white{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Responsive Styles  */
+@media screen and (max-width: 576px) {
+    .nav-links,.btn-primary{
+    display: none;
+    }
+    .navbar{
+    background-image: url(./assets/hamburger-menu.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    }
+    .banner {
+    height: auto;
+    background-size: 48px, 60px, 180px, cover;
+    background-position:center 20%, center 27%, center 25%, center;
+    }
+    .banner-container {
+    padding: 300px 0px;
+    margin-bottom: 32px;
+    }
+    .banner-badge {
+    font-size: 2rem;
+    max-width: 100px;
+    padding-right: 50px;
+    }
+    .about{
+    width: 100%;
+    }
+    .about-heading{
+    font-size: 2rem;
+    }
+    .about-content{
+    font-size: 1rem;
+    }
+    .about-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px 0px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .why-choose{
+    width: 100%;
+    padding: 24px 10px;
+    }
+    .section-heading{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 20px;
+    }
+    .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0;
+    }
+    #card-heading{
+    font-size: 1.2rem;
+    }
+    #card-content{
+    font-size: 0.9rem;
+    }
+    .video-container{
+    flex-direction: column;
+    margin: 0;
+    align-items: center; 
+    }
+    .featured-heading{
+    font-size: 2rem;
+    }
+.card-title{
+    font-size: 1rem;
+}
+.card-description{
+    font-size: 0.8rem;
+}
+.class-duration{
+    font-size: 0.9rem;
+}
+.host-heading{
+    font-size: 2rem;
+}
+.host-image img{
+    width: 150px;
+    height: 150px;
+}
+.host-intro{
+    flex-direction: column;
+    margin: 24px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.host-description{
+    margin: 0px;
+    align-items: center;
+
+}
+.footer {
+    height: auto;
+    min-height: 220px; 
+    background-size: cover;
+    background-position: center;
+}
+.footer-heading {
+    font-size: 1.8rem;
+    padding-top: 0;
+    margin-bottom: 18px;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+  .footer-links > * {
+    font-size:1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.footer-social-links {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.footer-copyright {
+    font-size: 0.75rem;
+}
+}
